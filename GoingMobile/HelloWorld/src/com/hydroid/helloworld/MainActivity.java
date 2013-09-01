@@ -1,6 +1,7 @@
 package com.hydroid.helloworld;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -41,6 +42,8 @@ public class MainActivity extends Activity {
 				Log.d(LOG_TAG, "Name: " + name);
 				Log.i(LOG_TAG, "Email: " + email);
 				
+				launchSecondActivity(name, email);
+				
 			}
 		});
     	
@@ -50,7 +53,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				nameET.setText("");
 				emailET.setText("");
-				nameET.requestFocus();
+				nameET.requestFocus(); // Moves the cursor to the name field
 			}
 		});
 	}
@@ -62,5 +65,12 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+	private void launchSecondActivity(String name, String email) {
+		Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+		intent.putExtra("name", name);
+		intent.putExtra("email", email);
+		startActivity(intent);
+	}
     
 }
