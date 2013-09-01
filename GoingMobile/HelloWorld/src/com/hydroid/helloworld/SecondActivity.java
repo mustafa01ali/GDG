@@ -23,7 +23,7 @@ public class SecondActivity extends Activity {
 		Intent i = getIntent();
 		
 		// Display the data passed via the intent
-		tv.setText(String.format("Name: %s\n\nEmail: %s", i.getStringExtra("name"), i.getStringExtra("email")));
+		tv.setText(String.format("%s: %s\n\n%s: %s", getString(R.string.name), i.getStringExtra("name"), getString(R.string.email), i.getStringExtra("email")));
 	}
 
 	@Override
