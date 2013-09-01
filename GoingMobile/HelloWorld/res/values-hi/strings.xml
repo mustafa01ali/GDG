@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">नमस्ते विश्व</string>
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="hello_">नमस्कार!</string>
+    <string name="name">नाम</string>
+    <string name="email">ईमेल</string>
+    <string name="submit">प्रस्तुत</string>
+    <string name="clear">साफ़</string>
+
+</resources>
