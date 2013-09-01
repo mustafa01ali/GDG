@@ -4,5 +4,11 @@
     <string name="app_name">HelloWorld</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="hello_">Hello!</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+    <string name="title_activity_second">SecondActivity</string>
 
 </resources>
